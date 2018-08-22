@@ -84,7 +84,6 @@ $(document).ready(function() {
       $(".scoreBoardPlayerTwoName").text(allPlayers.p2.name);
       updateScoreBoard();
       $(".playerTurnName").text(allPlayers.p1.name);
-      $("#game-container").slideDown();
       activeTurn = "p1";
       tempScore = 0;
       $(".scoreBoardTempScore").text(tempScore);
@@ -99,6 +98,9 @@ $(document).ready(function() {
 
   //roll click functionality
   $("#rollDiceButton").click(function() {
+    if ($(":animated").length) {
+      return false;
+    }
     var roll = rollDice();
     $(".img-holder").hide();
     $(".img-holder").children().remove();
