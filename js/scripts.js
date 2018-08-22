@@ -128,7 +128,7 @@ $(document).ready(function() {
         $(".scoreBoardTempScore").text(tempScore);
         activeTurn = switchTurn();
       } else if (allPlayers[activeTurn].score >= 100) {
-        $(".img-holder").append("<h3>" + allPlayers[activeTurn].name + " has won the game!</h3>");
+        alert(allPlayers[activeTurn].name + " has won the game!");
         tempScore = 0;
         $(".scoreBoardTempScore").text(tempScore);
         resetGame();
