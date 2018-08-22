@@ -24,10 +24,10 @@ console.log(allPlayers);
 function switchTurn() {
   allPlayers.p1.turn = !allPlayers.p1.turn;
   allPlayers.p2.turn = !allPlayers.p2.turn;
-  if (allPlayers.p1.turn) {
+  if (allPlayers.p1.turn === true) {
     $(".playerTurnName").text(allPlayers.p1.name);
     return "p1";
-  } else if (allPlayers.p2.turn) {
+  } else if (allPlayers.p2.turn === true) {
     $(".playerTurnName").text(allPlayers.p2.name);
     return "p2";
   }
@@ -98,6 +98,7 @@ $(document).ready(function() {
 
   //roll click functionality
   $("#rollDiceButton").click(function() {
+    //if statement to prevent bugs when rapid clicking roll dice button.
     if ($(":animated").length) {
       return false;
     }
