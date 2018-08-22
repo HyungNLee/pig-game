@@ -1,0 +1,81 @@
+#startGameButton, #resetGameButton {
+  display: block;
+  height: 75px;
+  width: 50%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+#playerOneInput, #playerTwoInput {
+  float: right;
+  width: 50%;
+  border-radius: 8px;
+}
+
+#playerNameInputs {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.game-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  height: 800px;
+}
+
+.game-header {
+  text-align: center;
+  font-weight: bold;
+}
+
+h3.game-header {
+  text-decoration: underline;
+}
+
+.game-container .row {
+  height: 100%;
+}
+
+#totalScoreBoard, #diceRollBoard {
+  height: 94.5%;
+  border-right: 1px solid black;
+}
+
+#rollDiceButton, #holdButton {
+  display: block;
+  margin: 0 auto;
+}
+
+/* #diceRollBoard {
+  position:relative;
+} */
+
+#diceButtonHolder {
+  position:absolute;
+  bottom: 0;
+  height: 7%;
+  width: 100%;
+}
+
+.img-holder img {
+  display: block;
+  margin: 0 auto;
+}
+
+.img-holder h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+}

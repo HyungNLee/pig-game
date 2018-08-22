@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Pig, a Game of Dice</h1>
+      </div>
+      <div class="form-container">
+        <form id=playerNameInputs>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="playerOneInput">Please enter player one's name:</label>
+              <input type="text" class="form-control" id="playerOneInput">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="playerTwoInput">Please enter player two's name:</label>
+              <input type="text" class="form-control" id="playerTwoInput">
+            </div>
+          </div>
+          <button class="btn btn-info" type="submit" id="startGameButton">START GAME!</button>
+        </form>
+      </div>
+      <div class="game-container">
+        <div class="row">
+          <h2 class="game-header">Game Board</h2>
+          <div class="col-md-3" id="totalScoreBoard">
+            <h3 class="game-header">Total Scores</h3>
+
+          </div>
+          <div class="col-md-6" id="diceRollBoard">
+            <h3 class="game-header">Dice Roll</h3>
+            <div class="img-holder">
+
+            </div>
+            <div class="row" id="diceButtonHolder">
+              <div class="col-sm-6">
+                <button class="btn btn-primary" type="submit" id="rollDiceButton">Roll Dice!</button>
+              </div>
+              <div class="col-sm-6">
+                <button class="btn btn-warning" type="submit" id="holdButton">Hold!</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" id="turnScoreBoard">
+            <h3 class="game-header">Turn Score</h3>
+
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-danger" type="submit" id="resetGameButton">RESET GAME!</button>
+    </div>
+  </body>
+</html>
