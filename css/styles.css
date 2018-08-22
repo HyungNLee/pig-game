@@ -34,6 +34,7 @@
   padding: 20px;
   height: 800px;
   display: none;
+  background-color: antiquewhite;
 }
 
 .game-header {
@@ -97,4 +98,10 @@ h3.game-header {
 
 .jumbotron {
   text-align: center;
+  border: 2px solid black;
+  background-color: lightslategrey;
+}
+
+.form-container {
+  background-color: whitesmoke;
 }
