@@ -30,10 +30,11 @@
       </div>
       <div class="game-container">
         <div class="row">
-          <h2 class="game-header">Game Board</h2>
+          <h2 class="game-header" id="game-board-header">Turn : <span class="playerTurnName"></span></h2>
           <div class="col-md-3" id="totalScoreBoard">
             <h3 class="game-header">Total Scores</h3>
-
+            <p><span class="scoreBoardPlayerOneName"></span>: <span class="scoreBoardPlayerOneScore"></span></p>
+            <p><span class="scoreBoardPlayerTwoName"></span>: <span class="scoreBoardPlayerTwoScore"></span></p>
           </div>
           <div class="col-md-6" id="diceRollBoard">
             <h3 class="game-header">Dice Roll</h3>
@@ -51,7 +52,7 @@
           </div>
           <div class="col-md-3" id="turnScoreBoard">
             <h3 class="game-header">Turn Score</h3>
-
+            <p><span class="scoreBoardTempScore"></span></p>
           </div>
         </div>
       </div>
